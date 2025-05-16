@@ -1,39 +1,52 @@
-/* Main section */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Profile image - only inside main */
-main img {
-  width: 150px;
-  height: auto;
-}
-
-/* General paragraph spacing */
-p {
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
   padding: 0;
-}
-
-/* Aside section */
-aside {
-  width: 300px;
-  margin: 1em auto;
-  border: 1px solid #ccc;
-  padding: 1em;
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   color: #333;
 }
 
-/* Aside image */
+/* Container principal */
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Imagem de perfil */
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Seção lateral */
+aside {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+}
+
 aside img {
   width: 200px;
   height: auto;
+  display: block;
+  margin-bottom: 10px;
 }
 
-/* Footer styles */
+/* Rodapé */
 footer {
-  margin-top: 2em;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 10px;
   border-top: 1px solid #ccc;
   text-align: center;
+  background-color: #fff;
 }
