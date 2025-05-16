@@ -4,8 +4,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #ddd8e7;
+  color: #6e39d9;
 }
 
 /* Container principal */
@@ -16,16 +16,22 @@ main {
   background-color: #fff;
 }
 
-/* Imagem de perfil */
-main img {
+/* Imagem de perfil (mais estilizada) */
+main > img {
   width: 150px;
   height: auto;
   border-radius: 8px;
   display: block;
-  margin: 0 auto 20px;
+  margin: 1rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Seção lateral */
+/* Parágrafos */
+p {
+  padding: 0;
+}
+
+/* Seção lateral (aside) */
 aside {
   max-width: 960px;
   margin: 20px auto;
@@ -34,11 +40,13 @@ aside {
   border: 1px solid #ccc;
 }
 
-aside img {
+/* Imagem dentro do aside */
+aside > img {
   width: 200px;
   height: auto;
   display: block;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  border-radius: 6px;
 }
 
 /* Rodapé */
@@ -50,3 +58,4 @@ footer {
   text-align: center;
   background-color: #fff;
 }
+
