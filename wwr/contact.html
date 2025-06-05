@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Water Adventure - Get in touch for questions, reservations or feedback." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Water Adventure - Reach out for questions and bookings." />
   <meta name="author" content="Gabriel Luiz Batista Passos" />
   <title>Contact Us | Water Adventure</title>
   <link rel="stylesheet" href="styles/rafting.css" />
@@ -17,94 +17,75 @@
       <a href="../index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
   </header>
 
   <main>
-    <div class="hero">
-      <img src="images/contact-hero.jpg" alt="Rafting Contact Background" />
-      <h1>Contact Water Adventure</h1>
-      <article>
-        <img src="images/happy-client.jpg" alt="Happy Client" />
-        <p>We're here to help you plan your next adventure!</p>
-      </article>
-    </div>
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 123 River Road, Adventure City, AC 45678</p>
+      <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+      <p><strong>Email:</strong> contact@wateradventure.com</p>
+      
+      <!-- Google Map embed sem style inline -->
+      <div class="map-container" aria-label="Google Map showing Water Adventure location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086142392184!2d-122.42324668468133!3d37.77902657975885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808ed8b3d0a1%3A0x30434397b8a0e5d!2s123%20River%20Road%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1686012738274!5m2!1sen!2sus"
+          title="Google Map location of Water Adventure"
+          width="600"
+          height="450"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
 
-    <div class="contact-content">
-      <section class="contact-info">
-        <h2>Our Location</h2>
-        <div class="contact-details">
-          <p><strong>Address:</strong> 123 River Road, Adventure City, AC 12345</p>
-          <p><strong>Phone:</strong> (555) 123-4567</p>
-          <p><strong>Email:</strong> contact@wateradventure.com</p>
-        </div>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-123.456789!3d45.678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQwJzQ0LjAiTiAxMjPCsDI3JzI0LjAiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </section>
+    <section class="staff-profiles">
+      <h2>Meet Our Team</h2>
+      <figure>
+        <img src="images/staff1.jpg" alt="Alice, Rafting Guide" />
+        <figcaption>Alice - Senior Rafting Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/staff2.jpg" alt="Bob, Safety Officer" />
+        <figcaption>Bob - Safety Officer</figcaption>
+      </figure>
+      <figure>
+        <img src="images/staff3.jpg" alt="Carol, Customer Support" />
+        <figcaption>Carol - Customer Support</figcaption>
+      </figure>
+    </section>
 
-      <section class="team-section">
-        <h2>Meet Our Team</h2>
-        <div class="team-grid">
-          <figure>
-            <img src="images/team1.jpg" alt="Team Member 1" />
-            <figcaption>Sarah Johnson<br>Adventure Guide</figcaption>
-          </figure>
-          <figure>
-            <img src="images/team2.jpg" alt="Team Member 2" />
-            <figcaption>Mike Chen<br>Safety Expert</figcaption>
-          </figure>
-          <figure>
-            <img src="images/team3.jpg" alt="Team Member 3" />
-            <figcaption>Emily Davis<br>Customer Service</figcaption>
-          </figure>
-        </div>
-      </section>
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#" method="post" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" />
 
-      <section class="contact-form">
-        <h2>Send Us a Message</h2>
-        <form action="contact-form-handler.php" method="post">
-          <div class="form-group">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          
-          <div class="form-group">
-            <label>Purpose of Message:</label>
-            <div class="radio-group">
-              <input type="radio" id="general" name="purpose" value="general" checked>
-              <label for="general">General Inquiry</label>
-            </div>
-            <div class="radio-group">
-              <input type="radio" id="reservation" name="purpose" value="reservation">
-              <label for="reservation">Reservation Question</label>
-            </div>
-            <div class="radio-group">
-              <input type="radio" id="suggestion" name="purpose" value="suggestion">
-              <label for="suggestion">Website Suggestion</label>
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          
-          <div class="form-group checkbox-group">
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Subscribe to monthly newsletter</label>
-          </div>
-          
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-      </section>
-    </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+        <fieldset>
+          <legend>Purpose of your message:</legend>
+          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br />
+          <label><input type="radio" name="purpose" value="booking" /> Booking Question</label><br />
+          <label><input type="radio" name="purpose" value="website" /> Website Suggestion</label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="newsletter" />
+          Please sign me up for the monthly newsletter
+        </label>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
@@ -114,8 +95,10 @@
       <a href="#"><img src="images/instagram.avif" alt="Instagram" /></a>
       <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
     </nav>
+    <p><a href="https://moqups.com/GabrielLuiz/water-adventure-contact-wireframe" target="_blank" rel="noopener noreferrer">Wireframe Design</a></p>
   </footer>
 </body>
 </html>
+
 
 

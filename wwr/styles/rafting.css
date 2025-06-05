@@ -1,150 +1,124 @@
-:root {
-  --primary-color: #0077b6;
-  --accent1-color: #023e8a;
-  --accent2-color: #90e0ef;
-  --body-font: 'Lato', sans-serif;
-  --heading-font: 'Anton', sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #f0f8ff;
-}
-
-/* ✅ Alinhamento geral */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* ✅ HEADER com GRID */
-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-  padding: 1rem;
-}
-
-/* Logo */
-header img {
-  max-width: 150px;
-  display: block;
-  margin: 0 auto;
-}
-
-/* ✅ NAV com FLEX */
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
-}
-
-nav a {
-  color: var(--accent2-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Títulos */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin: 16px 0;
-}
-
-/* Conteúdo */
-nav, p, section, article {
+/* Container para iframe do mapa, para controlar tamanho e borda */
+.map-container {
   margin: 16px;
-  padding: 8px;
+  max-width: 840px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* ✅ Rodapé */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem;
-}
-
-footer .socialmedia {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-.socialmedia img {
-  width: 32px;
-  height: 32px;
-}
-
-/* ✅ HERO */
-.hero {
-  position: relative;
-}
-
-.hero img {
+.map-container iframe {
   width: 100%;
-  height: auto;
+  height: 300px;
+  border: none; /* removendo style inline */
+  border-radius: 8px;
+}
+
+/* Seção de perfis */
+.staff-profiles {
+  margin: 16px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.staff-profiles figure {
+  text-align: center;
+  max-width: 220px;
+}
+
+.staff-profiles img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+/* Formulário de contato */
+.contact-form {
+  margin: 24px 16px;
+  max-width: 600px;
+  background-color: #e6f0f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.contact-form label {
   display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
   width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+
+.contact-form input[type="radio"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.contact-form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  font-family: var(--body-font);
+}
+
+.contact-form legend {
+  font-weight: 700;
+  padding: 0 8px;
+  color: var(--primary-color);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  display: block;
+  margin: 24px auto 0;
+  padding: 12px 40px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
   background-color: var(--accent1-color);
-  color: #fff;
+  outline: none;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: rgba(255,255,255,0.85);
-  padding: 15px;
-  max-width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  border-radius: 8px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 15px;
-  border-radius: 8px;
-}
-
-/* ✅ Imagens de aventura */
-section figure {
-  display: inline-block;
-  margin: 10px;
-  text-align: center;
-}
-
-section img {
-  max-width: 150px;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.15);
-}
 
 
 
