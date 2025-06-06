@@ -1,123 +1,139 @@
-/* Container para iframe do mapa, para controlar tamanho e borda */
-.map-container {
-  margin: 16px;
-  max-width: 840px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.map-container iframe {
-  width: 100%;
-  height: 300px;
-  border: none; /* removendo style inline */
-  border-radius: 8px;
+/* Variáveis de cor e fonte */
+:root {
+  --primary-color: #01497C;
+  --accent1-color: #F9F7F3;
+  --accent2-color: #E07A5F;
+  --heading-font: 'Anton', sans-serif;
+  --body-font: 'Lato', sans-serif;
 }
 
-/* Seção de perfis */
-.staff-profiles {
-  margin: 16px;
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  flex-wrap: wrap;
+/* Fonte padrão e cor */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #ffffff;
 }
 
-.staff-profiles figure {
-  text-align: center;
-  max-width: 220px;
+/* Largura centralizada */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
-.staff-profiles img {
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-}
-
-/* Formulário de contato */
-.contact-form {
-  margin: 24px 16px;
-  max-width: 600px;
-  background-color: #e6f0f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-}
-
-.contact-form h2 {
-  text-align: center;
-  margin-bottom: 16px;
+/* Títulos */
+h1, h2 {
+  font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-.contact-form label {
-  display: block;
-  margin: 12px 0 6px;
-  font-weight: 600;
+/* Margens e padding gerais */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-family: var(--body-font);
-  font-size: 1rem;
-}
-
-.contact-form input[type="radio"] {
-  margin-right: 8px;
-  cursor: pointer;
-}
-
-.contact-form fieldset {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 12px 16px;
-  margin-top: 12px;
-  font-family: var(--body-font);
-}
-
-.contact-form legend {
-  font-weight: 700;
-  padding: 0 8px;
-  color: var(--primary-color);
-}
-
-.checkbox-label {
-  display: flex;
-  align-items: center;
-  margin-top: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.checkbox-label input[type="checkbox"] {
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.submit-btn {
-  display: block;
-  margin: 24px auto 0;
-  padding: 12px 40px;
+/* Header */
+header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
-  font-weight: 700;
-  border: none;
-  border-radius: 25px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
-  background-color: var(--accent1-color);
-  outline: none;
+nav a {
+  margin: 0 8px;
+  color: var(--accent1-color);
+  text-decoration: none;
+  font-weight: bold;
 }
+
+/* Hero */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.85;
+  background-color: var(--accent1-color);
+  color: #000;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(1, 73, 124, 0.9);
+  color: #fff;
+  padding: 16px;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 8px;
+}
+
+/* Adventure images */
+section img {
+  max-width: 100%;
+  height: auto;
+  margin: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+/* Social media icons */
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+}
+
 
 
 
