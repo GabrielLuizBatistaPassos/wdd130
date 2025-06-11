@@ -271,6 +271,19 @@ p {
     width: 100%;
   }
 }
+.cta-button {
+  background-color: #004e89;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #003760;
+}
 
 
 

@@ -3,58 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discover our white water rafting trips and plan your next adventure today!" />
+  <meta name="description" content="Explore our rafting trip options—whether you're seeking thrill, relaxation, or family fun, we have the perfect adventure for you." />
   <title>Rafting Adventures | Trips</title>
   <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
   <header class="site-header">
-    <img src="images/Nature.webp" alt="Rafting Site Logo" class="logo" />
+    <img src="images/logo.png" alt="Rafting Adventures Logo" class="logo" />
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="trips.html" class="active">Trips</a>
       <a href="about.html">About Us</a>
+      <a href="trips.html" class="active">Trips</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main class="contact-main">
-    <section>
+    <section style="text-align: center; margin-bottom: 3rem;">
       <h1>Choose Your Adventure</h1>
-      <p>Explore our exciting rafting trips suited for all experience levels!</p>
+      <p style="max-width: 800px; margin: auto;">
+        Whether you're looking for adrenaline, tranquility, or quality family time, our trip packages offer something for everyone.
+      </p>
     </section>
 
     <section class="team-grid">
       <div class="team-member">
-        <img src="images/Beginner Rapids.webp" alt="Beginner Trip">
-        <h3>Beginner Rapids</h3>
-        <p>Perfect for families and first-timers, enjoy gentle waves and great scenery.</p>
+        <img src="images/Image3.jpg" alt="River Rush Trip" />
+        <h2>River Rush</h2>
+        <p>
+          Get your heart racing with our most exhilarating trip. Great for experienced rafters and adrenaline lovers. Includes full safety gear and lunch.
+        </p>
+        <p><strong>Duration:</strong> 4 hours</p>
+        <p><strong>Price:</strong> $120 per person</p>
       </div>
+
       <div class="team-member">
-        <img src="images/teem.webp" alt="Intermediate Trip">
-        <h3>Intermediate Challenge</h3>
-        <p>A balanced trip for those seeking more excitement without extreme difficulty.</p>
+        <img src="images/Image5.jpg" alt="Nature Escape Trip" />
+        <h2>Nature Escape</h2>
+        <p>
+          Enjoy calm waters and scenic views. Ideal for photography, relaxation, and beginners. Includes snacks and a guide narration.
+        </p>
+        <p><strong>Duration:</strong> 3 hours</p>
+        <p><strong>Price:</strong> $90 per person</p>
       </div>
+
       <div class="team-member">
-        <img src="images/expert.webp" alt="Advanced Trip">
-        <h3>Advanced Rapids</h3>
-        <p>Thrill-seekers welcome! Navigate intense rapids and test your skills.</p>
+        <img src="images/Image6.jpg" alt="Family Float Trip" />
+        <h2>Family Float</h2>
+        <p>
+          Perfect for families with children. Safe, easy, and full of fun moments. Includes waterproof photo package and life jackets for all sizes.
+        </p>
+        <p><strong>Duration:</strong> 2.5 hours</p>
+        <p><strong>Price:</strong> $75 per person</p>
       </div>
     </section>
 
-    <section class="contact-form-section">
-      <h2>Book Your Trip</h2>
-      <form class="contact-form" action="#">
-        <label for="trip-name">Trip Name:</label>
-        <input type="text" id="trip-name" name="trip-name" required />
+    <section class="form-box" style="margin-top: 3rem;">
+      <h2>Reserve Your Trip</h2>
+      <form class="contact-form">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required />
 
-        <label for="participants">Number of Participants:</label>
-        <input type="text" id="participants" name="participants" required />
+        <label for="trip-type">Select a Trip</label>
+        <select id="trip-type" name="trip-type" required>
+          <option value="">-- Please Choose --</option>
+          <option value="river-rush">River Rush</option>
+          <option value="nature-escape">Nature Escape</option>
+          <option value="family-float">Family Float</option>
+        </select>
 
-        <label for="email">Contact Email:</label>
+        <label for="participants">Number of Participants</label>
+        <input type="number" id="participants" name="participants" min="1" required />
+
+        <label for="email">Contact Email</label>
         <input type="email" id="email" name="email" required />
 
-        <button type="submit">Request Booking</button>
+        <button type="submit">Submit Reservation</button>
       </form>
     </section>
   </main>
@@ -62,13 +86,17 @@
   <footer class="site-footer">
     <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
     <div class="social-links">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
     </div>
   </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
 
 
 
