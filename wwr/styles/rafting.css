@@ -284,6 +284,19 @@ p {
 .cta-button:hover {
   background-color: #003760;
 }
+#pond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* se quiser que quebrem em telas menores */
+  gap: 1rem;       /* espaçamento moderno entre imagens */
+}
+
+#pond img {
+  max-width: 250px;
+  border-radius: 10px;
+}
+
 
 
 
