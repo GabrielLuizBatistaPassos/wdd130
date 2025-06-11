@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Water Adventure - Reach out to us for questions, bookings, or general info." />
-  <meta name="author" content="Gabriell Luiz" />
+  <meta name="description" content="Contact Water Adventure for inquiries, bookings, or suggestions." />
   <title>Contact Us | Water Adventure</title>
   <link rel="stylesheet" href="styles/rafting.css" />
   <script src="https://kit.fontawesome.com/a2e0e6f91c.js" crossorigin="anonymous"></script>
@@ -20,36 +19,69 @@
     </nav>
   </header>
 
-  <main>
-    <section>
+  <main class="contact-main">
+    <section class="contact-info">
       <h1>Contact Us</h1>
-      <p>We would love to hear from you! Fill out the form below or reach us through our contact info.</p>
-
-      <form action="thankyou.html" method="post" class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
+      <div class="contact-details">
+        <p>📍 123 River Road, Adventure City</p>
+        <p>📞 +1 (555) 123-4567</p>
+        <p>✉️ contact@wateradventure.com</p>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
-    <section id="pond" class="contact-info">
-      <h2>Visit Us</h2>
-      <img src="images/curitiba.jpg" alt="Map Location" loading="lazy" />
-      <p><strong>Address:</strong> 123 River Lane, Adventure City, WA</p>
-      <p><strong>Phone:</strong> (123) 456-7890</p>
-      <p><strong>Email:</strong> contact@wateradventure.com</p>
+    <section class="team-section">
+      <h2>Our Team</h2>
+      <div class=id="pond">
+        <div class="team-member">
+          <img src="images/ChatGPT Image 5 de jun. de 2025, 20_02_37.png" alt="Emily – Customer Support" />
+          <p>Emily – Customer Support</p>
+        </div>
+        <div class="team-member">
+          <img src="images/ChatGPT Image 5 de jun. de 2025, 20_02_35.png" alt="Michael – Tour Guide" />
+          <p>Michael – Tour Guide</p>
+        </div>
+        <div class="team-member">
+          <img src="images/ChatGPT Image 5 de jun. de 2025, 20_02_40.png" alt="Marcos – Booking Specialist" />
+          <p>Sophia – Booking Specialist</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <div class="form-box">
+        <form class="contact-form">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <p>Purpose:</p>
+          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="booking" /> Booking Question</label>
+          <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <label>
+            <input type="checkbox" name="newsletter" /> Please sign me up for the monthly newsletter
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer" aria-label="Website footer">
+  <footer class="site-footer">
     <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
+    <a href="https://app.moqups.com/klI6dmi5zC1psgla9WWTqOVJOBPbjQkT/view/page/ad64222d5" target="_blank">View Wireframe</a>    
+      <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
     <div class="social-links">
       <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
       <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -61,7 +93,6 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-
 
 
 
