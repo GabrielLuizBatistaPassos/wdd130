@@ -267,6 +267,63 @@ main.contact-main {
   color: #004e89;
   font-size: 1rem;
 }
+/* Section geral */
+main > section {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* Hero com imagem e texto lado a lado */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Artigo interno */
+.hero article {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+/* Ajustes na galeria de imagens */
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#pond img {
+  flex: 1 1 calc(33% - 1rem);
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  #pond img {
+    flex: 1 1 100%;
+  }
+}
+
 
 
 
